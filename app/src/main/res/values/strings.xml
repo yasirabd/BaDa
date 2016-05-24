@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">BaDa</string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Pelajari Bahasamu</string>
+    <string name="slide_1_desc">Cara mudah belajar bahasa daerah dalam genggaman tanganmu.</string>
+
+    <string name="slide_2_title">Tingkatkan Bahasamu</string>
+    <string name="slide_2_desc">Pelajari dan kuasai bahasa daerah dengan menyelesaikan tiap jenjang.</string>
+
+    <string name="slide_3_title">Taklukkan Tantangan</string>
+    <string name="slide_3_desc">Selesaikan setiap pelajaran tanpa kehilangan hatimu.</string>
+
+    <string name="slide_4_title">Dapatkan Reward</string>
+    <string name="slide_4_desc">Tukarkan point dengan reward yang kamu inginkan.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
 </resources>

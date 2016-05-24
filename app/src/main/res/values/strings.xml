@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">BaDa</string>
+
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>
@@ -17,6 +18,18 @@
     <string name="slide_4_title">Dapatkan Reward</string>
     <string name="slide_4_desc">Tukarkan point dengan reward yang kamu inginkan.</string>
 
-    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
-    <string name="play_again">Play Again</string>
+    <string name="app_full_name">Bahasa Daerah</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Butuh ijin</string>
 </resources>

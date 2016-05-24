@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">BaDa</string>
+    <string name="app_full_name">Bahasa Daerah</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="error_invalid_username">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
 </resources>

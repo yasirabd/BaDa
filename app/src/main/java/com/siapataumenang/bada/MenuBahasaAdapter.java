@@ -33,7 +33,7 @@ public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.Me
     @Override
     public MenuViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.recycler_menu_bahasa, parent, false);
+                .inflate(R.layout.menu_bahasa_text_view, parent, false);
 
         return new MenuViewHolder(itemView);
     }

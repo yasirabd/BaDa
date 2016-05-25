@@ -17,11 +17,12 @@ public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.Me
     private ArrayList<MenuBahasa> menuBahasaList;
 
     public class MenuViewHolder extends RecyclerView.ViewHolder {
-        public Button menu;
+
+        public TextView menuTextView;
 
         public MenuViewHolder(View view) {
             super(view);
-            menu = (Button) view.findViewById(R.id.button_menu);
+            menuTextView = (TextView) view.findViewById(R.id.menu_bahasa_text_view);
         }
     }
 
@@ -40,7 +41,7 @@ public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.Me
     @Override
     public void onBindViewHolder(MenuViewHolder holder, int position) {
         MenuBahasa menuBahasa = menuBahasaList.get(position);
-        holder.menu.setText(menuBahasa.getBahasa());
+        holder.menuTextView.setText(menuBahasa.getBahasa());
     }
 
     @Override

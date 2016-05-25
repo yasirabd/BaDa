@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler_menu_bahasa);
 
-        recyclerView = (RecyclerView) findViewById(R.id.menu_recycler_view);
+        recyclerView = (RecyclerView) findViewById(R.id.menu_bahasa_recycler_view);
 
         mAdapter = new MenuBahasaAdapter(menuBahasaList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -35,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
         MenuBahasa menuBahasa = new MenuBahasa("Bahasa Jawa");
         menuBahasaList.add(menuBahasa);
 
-//        MenuBahasa menuBahasa2 = new MenuBahasa("Bahasa Sunda");
-//        menuBahasaList.add(menuBahasa2);
-//
-//        MenuBahasa menuBahasa3 = new MenuBahasa("Bahasa Batak");
-//        menuBahasaList.add(menuBahasa3);
-//
-//        MenuBahasa menuBahasa4 = new MenuBahasa("Bahasa Bali");
-//        menuBahasaList.add(menuBahasa4);
+        MenuBahasa menuBahasa2 = new MenuBahasa("Bahasa Sunda");
+        menuBahasaList.add(menuBahasa2);
+
+        MenuBahasa menuBahasa3 = new MenuBahasa("Bahasa Batak");
+        menuBahasaList.add(menuBahasa3);
+
+        MenuBahasa menuBahasa4 = new MenuBahasa("Bahasa Bali");
+        menuBahasaList.add(menuBahasa4);
 
         mAdapter.notifyDataSetChanged();
     }

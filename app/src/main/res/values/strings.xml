@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">BaDa</string>
+    <string name="app_name">Bae</string>
 
     <string name="title_activity_welcome">Home Screen</string>
-    <string name="next">NEXT</string>
-    <string name="skip">SKIP</string>
-    <string name="start">GOT IT</string>
+    <string name="next">Lanjut</string>
+    <string name="skip">Lewati</string>
+    <string name="start">Mengerti</string>
 
     <string name="slide_1_title">Pelajari Bahasamu</string>
     <string name="slide_1_desc">Cara mudah belajar bahasa daerah dalam genggaman tanganmu.</string>
@@ -32,4 +32,11 @@
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">Butuh ijin</string>
+
+
+    <string name="congratulation">Selamat !</string>
+    <string name="get_point">Anda mendapatkan point 30xp</string>
+    <string name="share_point">Sebarkan</string>
+
+
 </resources>

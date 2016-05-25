@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BaDa</string>
+    <string name="app_name">Bae</string>
 
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">Lanjut</string>
@@ -34,29 +34,9 @@
     <string name="permission_rationale">Butuh ijin</string>
 
 
-
-
-
-
-
     <string name="congratulation">Selamat !</string>
     <string name="get_point">Anda mendapatkan point 30xp</string>
     <string name="share_point">Sebarkan</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </resources>

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ArrayList<MenuBahasa> menuBahasaList = new ArrayList<>();
+    private List<MenuBahasa> menuBahasaList = new ArrayList<>();
     private RecyclerView recyclerView;
     private MenuBahasaAdapter mAdapter;
 
@@ -23,8 +23,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.menu_bahasa_recycler_view);
 
         mAdapter = new MenuBahasaAdapter(menuBahasaList);
+
+        recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
+
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
@@ -35,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
         MenuBahasa menuBahasa = new MenuBahasa("Bahasa Jawa");
         menuBahasaList.add(menuBahasa);
 
-        MenuBahasa menuBahasa2 = new MenuBahasa("Bahasa Sunda");
-        menuBahasaList.add(menuBahasa2);
+        menuBahasa = new MenuBahasa("Bahasa Sunda");
+        menuBahasaList.add(menuBahasa);
 
-        MenuBahasa menuBahasa3 = new MenuBahasa("Bahasa Batak");
-        menuBahasaList.add(menuBahasa3);
+        menuBahasa = new MenuBahasa("Bahasa Batak");
+        menuBahasaList.add(menuBahasa);
 
-        MenuBahasa menuBahasa4 = new MenuBahasa("Bahasa Bali");
-        menuBahasaList.add(menuBahasa4);
+        menuBahasa = new MenuBahasa("Bahasa Bali");
+        menuBahasaList.add(menuBahasa);
 
         mAdapter.notifyDataSetChanged();
     }

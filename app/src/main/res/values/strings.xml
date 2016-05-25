@@ -1,5 +1,23 @@
 <resources>
     <string name="app_name">BaDa</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Pelajari Bahasamu</string>
+    <string name="slide_1_desc">Cara mudah belajar bahasa daerah dalam genggaman tanganmu.</string>
+
+    <string name="slide_2_title">Tingkatkan Bahasamu</string>
+    <string name="slide_2_desc">Pelajari dan kuasai bahasa daerah dengan menyelesaikan tiap jenjang.</string>
+
+    <string name="slide_3_title">Taklukkan Tantangan</string>
+    <string name="slide_3_desc">Selesaikan setiap pelajaran tanpa kehilangan hatimu.</string>
+
+    <string name="slide_4_title">Dapatkan Reward</string>
+    <string name="slide_4_desc">Tukarkan point dengan reward yang kamu inginkan.</string>
+
     <string name="app_full_name">Bahasa Daerah</string>
 
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
@@ -13,4 +31,5 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Butuh ijin</string>
 </resources>

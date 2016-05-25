@@ -29,6 +29,8 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,11 +85,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         });
 
         ImageButton mSignInButton = (ImageButton) findViewById(R.id.sign_in_button);
-        assert mSignInButton != null;
+//        assert mSignInButton != null;
         mSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin();
+                Toast.makeText(getApplicationContext(), "opo iki", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             }

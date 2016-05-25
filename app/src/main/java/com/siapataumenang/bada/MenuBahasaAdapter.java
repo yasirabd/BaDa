@@ -13,39 +13,40 @@ import java.util.List;
 /**
  * Created by M. Febra S on 25/05/2016.
  */
-public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.MenuViewHolder> {
-    private ArrayList<MenuBahasa> menuBahasaList;
+public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.MyViewHolder> {
 
-    public class MenuViewHolder extends RecyclerView.ViewHolder {
+    private List<MenuBahasa> bahasaList;
 
-        public TextView menuTextView;
+    public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        public MenuViewHolder(View view) {
+        public TextView bahasa;
+
+        public MyViewHolder(View view) {
             super(view);
-            menuTextView = (TextView) view.findViewById(R.id.menu_bahasa_text_view);
+            bahasa = (TextView) view.findViewById(R.id.bahasa);
         }
     }
 
-    public MenuBahasaAdapter(ArrayList<MenuBahasa> menuBahasaList) {
-        this.menuBahasaList = menuBahasaList;
+    public MenuBahasaAdapter(List<MenuBahasa> bahasaList) {
+        this.bahasaList = bahasaList;
     }
 
     @Override
-    public MenuViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.recycler_menu_bahasa, parent, false);
+                .inflate(R.layout.menu_bahasa_text_view, parent, false);
 
-        return new MenuViewHolder(itemView);
+        return new MyViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(MenuViewHolder holder, int position) {
-        MenuBahasa menuBahasa = menuBahasaList.get(position);
-        holder.menuTextView.setText(menuBahasa.getBahasa());
+    public void onBindViewHolder(MyViewHolder holder, int position) {
+        MenuBahasa menuBahasa = bahasaList.get(position);
+        holder.bahasa.setText(menuBahasa.getBahasa());
     }
 
     @Override
     public int getItemCount() {
-        return menuBahasaList.size();
+        return bahasaList.size();
     }
 }

@@ -7,13 +7,11 @@ public class MenuBahasa {
     private String bahasa;
 
     public MenuBahasa(){
-
     }
 
     public MenuBahasa(String bahasa){
         this.bahasa = bahasa;
     }
-
     public String getBahasa() {
         return bahasa;
     }

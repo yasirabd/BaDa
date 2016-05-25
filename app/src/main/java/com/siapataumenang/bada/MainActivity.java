@@ -11,14 +11,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private List<MenuBahasa> menuBahasaList = new ArrayList<>();
+    private ArrayList<MenuBahasa> menuBahasaList = new ArrayList<>();
     private RecyclerView recyclerView;
     private MenuBahasaAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.recycler_menu_bahasa);
 
         recyclerView = (RecyclerView) findViewById(R.id.menu_recycler_view);
 
@@ -35,14 +35,14 @@ public class MainActivity extends AppCompatActivity {
         MenuBahasa menuBahasa = new MenuBahasa("Bahasa Jawa");
         menuBahasaList.add(menuBahasa);
 
-        MenuBahasa menuBahasa2 = new MenuBahasa("Bahasa Sunda");
-        menuBahasaList.add(menuBahasa2);
-
-        MenuBahasa menuBahasa3 = new MenuBahasa("Bahasa Batak");
-        menuBahasaList.add(menuBahasa3);
-
-        MenuBahasa menuBahasa4 = new MenuBahasa("Bahasa Bali");
-        menuBahasaList.add(menuBahasa4);
+//        MenuBahasa menuBahasa2 = new MenuBahasa("Bahasa Sunda");
+//        menuBahasaList.add(menuBahasa2);
+//
+//        MenuBahasa menuBahasa3 = new MenuBahasa("Bahasa Batak");
+//        menuBahasaList.add(menuBahasa3);
+//
+//        MenuBahasa menuBahasa4 = new MenuBahasa("Bahasa Bali");
+//        menuBahasaList.add(menuBahasa4);
 
         mAdapter.notifyDataSetChanged();
     }

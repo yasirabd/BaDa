@@ -7,13 +7,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by M. Febra S on 25/05/2016.
  */
 public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.MenuViewHolder> {
-    private List<MenuBahasa> menuBahasaList;
+    private ArrayList<MenuBahasa> menuBahasaList;
 
     public class MenuViewHolder extends RecyclerView.ViewHolder {
         public Button menu;
@@ -24,7 +25,7 @@ public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.Me
         }
     }
 
-    public MenuBahasaAdapter(List<MenuBahasa> menuBahasaList) {
+    public MenuBahasaAdapter(ArrayList<MenuBahasa> menuBahasaList) {
         this.menuBahasaList = menuBahasaList;
     }
 

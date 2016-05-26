@@ -6,12 +6,16 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.orm.SugarRecord;
+import com.orm.query.Select;
+import com.siapataumenang.bada.data.LanguageTable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private List<MenuBahasa> menuBahasaList = new ArrayList<>();
+    private List<LanguageTable> menuBahasaList = new ArrayList<>();
     private RecyclerView recyclerView;
     private MenuBahasaAdapter mAdapter;
 
@@ -22,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.menu_bahasa_recycler_view);
 
+        menuBahasaList = Select.from(LanguageTable.class).list();
         mAdapter = new MenuBahasaAdapter(menuBahasaList);
 
         recyclerView.setHasFixedSize(true);
@@ -31,22 +36,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
-        prepareMenuBahasaData();
+//        readData();
     }
 
-    private void prepareMenuBahasaData(){
-        MenuBahasa menuBahasa = new MenuBahasa("Bahasa Jawa");
-        menuBahasaList.add(menuBahasa);
-
-        menuBahasa = new MenuBahasa("Bahasa Sunda");
-        menuBahasaList.add(menuBahasa);
-
-        menuBahasa = new MenuBahasa("Bahasa Batak");
-        menuBahasaList.add(menuBahasa);
-
-        menuBahasa = new MenuBahasa("Bahasa Bali");
-        menuBahasaList.add(menuBahasa);
+    /*private void readData() {
+        menuBahasaList = Select.from(LanguageTable.class).list();
 
         mAdapter.notifyDataSetChanged();
-    }
+    }*/
 }

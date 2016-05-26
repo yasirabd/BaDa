@@ -9,6 +9,11 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.orm.query.Select;
+import com.siapataumenang.bada.data.LanguageTable;
+
+import java.util.List;
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
@@ -22,10 +27,33 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-//        mVisible = true;
-//        mControlsView = findViewById(R.id.fullscreen_content_controls);
-//        mContentView = findViewById(R.id.fullscreen_content);
+        // delete all data in LanguageTable
+//        List<LanguageTable> books = LanguageTable.listAll(LanguageTable.class);
+//        LanguageTable.deleteAll(LanguageTable.class);
 
+        List<LanguageTable> menuBahasaList = Select.from(LanguageTable.class).list();
+
+        if(menuBahasaList == null) {
+            /* Insert data to DB */
+            LanguageTable language = new LanguageTable("Bahasa Jawa");
+            language.save();
+
+            language = new LanguageTable("Bahasa Sunda");
+            language.save();
+
+            language = new LanguageTable("Bahasa Aceh");
+            language.save();
+
+            // Maluku, Ambon Timur
+            language = new LanguageTable("Bahasa Alor");
+            language.save();
+
+            // Kalimantan
+            language = new LanguageTable("Bahasa Banjar");
+            language.save();
+
+            /* End insert data */
+        }
         new Handler().postDelayed(new Runnable() {
 
             /*

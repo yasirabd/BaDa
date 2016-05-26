@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.siapataumenang.bada.data.LanguageTable;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +17,7 @@ import java.util.List;
  */
 public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.MyViewHolder> {
 
-    private List<MenuBahasa> bahasaList;
+    private List<LanguageTable> bahasaList;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
@@ -27,7 +29,7 @@ public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.My
         }
     }
 
-    public MenuBahasaAdapter(List<MenuBahasa> bahasaList) {
+    public MenuBahasaAdapter(List<LanguageTable> bahasaList) {
         this.bahasaList = bahasaList;
     }
 
@@ -41,8 +43,8 @@ public class MenuBahasaAdapter extends RecyclerView.Adapter<MenuBahasaAdapter.My
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        MenuBahasa menuBahasa = bahasaList.get(position);
-        holder.bahasa.setText(menuBahasa.getBahasa());
+        LanguageTable menu = bahasaList.get(position);
+        holder.bahasa.setText(menu.getLanguage());
     }
 
     @Override

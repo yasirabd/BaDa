@@ -2,13 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorLightPrimaryColor"
+    android:background="@color/bg_screen1"
     tools:context="com.siapataumenang.bada.SplashScreenActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/bada"/>
+        android:src="@drawable/bae"/>
 
 </RelativeLayout>

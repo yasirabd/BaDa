@@ -31,7 +31,8 @@
             android:theme="@style/AppThemeWelcome" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/sign_in" />
+            android:label="@string/sign_in"
+            android:theme="@style/AppThemeLogin"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
